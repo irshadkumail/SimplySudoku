@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="70dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/sudoku_tile"
+
+            android:layout_margin="10dp"
+            android:id="@+id/submit_button"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/sudoku_tile"
+
+            android:text="TIMER"
+            android:id="@+id/timer_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:id="@+id/separator"
+
+            android:text=":"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:id="@+id/minutes"
+            android:text="00"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/separator"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:id="@+id/seconds"
+            android:text="00"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/separator"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <com.sodo.kumail.sudokureloaded.GameView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gameView"></com.sodo.kumail.sudokureloaded.GameView>
+
+</LinearLayout>

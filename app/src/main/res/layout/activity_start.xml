@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sudoku"
+    tools:context=".StartActivity">
+
+    <TextView android:text="@string/game_name"
+
+        android:id="@+id/game_name_text"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gameSubnameText"
+        android:layout_below="@id/game_name_text"
+        android:textColor="@android:color/black"
+
+        android:textSize="8dp"
+        android:text="RELOADED"
+        android:layout_alignEnd="@id/game_name_text"/>
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/continueButton"
+        android:text="Continue"
+        android:layout_below="@id/game_name_text"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/newGameButton"
+        android:text="NEW Game"
+        android:layout_below="@id/continueButton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutButton"
+        android:text="About"
+        android:layout_below="@id/newGameButton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitButton"
+        android:text="Exit"
+        android:layout_below="@id/aboutButton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
